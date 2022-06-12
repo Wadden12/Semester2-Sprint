@@ -1,0 +1,304 @@
+<!-- Project: Gary Blue's Dinner
+Develops: Brandon, Cody, Mike
+Date: Feb 22, 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gary Blue's Diner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="nav__brand" href="index.html"
+        ><span class="logo-container">
+          <img
+            class="logo"
+            src="./images/GaryBlues.png"
+            alt="Gary Blue Logo"
+          /> </span
+      ></a>
+      <h1 class="nav__header">Gary Blue's Dinner</h1>
+      <ul class="list nav__list">
+        <li class="nav__item"><a href="breakfast.html">Menu</a></li>
+        <li class="nav__item"><a href="order.html">Order Now</a></li>
+        <li class="nav__item">
+          <a href="order.html">
+            <img
+              class="icon icon--small"
+              src="/images/shopping-cart.svg"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="slideshow-container">
+      <div class="banner">
+        <picture>
+          <source type="image/webp" srcset="../images/OnlineOrdering.webp" />
+
+          <img src="./images/OnlineOrdering.png" alt="Online Ordering Banner" />
+        </picture>
+      </div>
+
+      <div class="banner">
+        <picture>
+          <source type="image/webp" srcset="../images/BigGaryTuesday.webp" />
+
+          <img
+            src="./images/BigGaryTuesday.png"
+            alt="Big Gary Tuesday Banner"
+          />
+        </picture>
+      </div>
+
+      <div class="banner">
+        <picture>
+          <source srcset="./images/Garycombo.webp" type="image/webp" />
+
+          <img src="./images/Garycombo.png" alt="Gard Combo Banner" />
+        </picture>
+      </div>
+      <div class="banner">
+        <picture>
+          <source srcset="../images/StrawberrySquash.webp" type="image/webp" />
+
+          <img
+            src="./images/StrawberrySquash.png"
+            alt="Strawberry Squash Banner"
+          />
+        </picture>
+      </div>
+    </div>
+    <section class="card card--primary card--stroke grid grid--6x1">
+      <a href="breakfast.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/bigbreakfast.webp" type="image/webp" />
+
+            <img
+              class="menu-links__img"
+              src="./images/bigbreakfast.png"
+              alt="bigbreakfast"
+            />
+          </picture>
+          <span class="badge badge--secondary">Breakfast</span>
+        </div>
+      </a>
+      <a href="lunch.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/BigGaryBurger.webp" type="image/webp" />
+            <img
+              class="menu-links__img"
+              src="./images/BigGaryBurger.png"
+              alt="Big Gary Burger Looks Yummy"
+            />
+          </picture>
+          <span class="badge badge--secondary">Lunch</span>
+        </div>
+      </a>
+      <a href="dinner.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/Wingbucket.webp" type="image/webp" />
+            <img
+              class="menu-links__img"
+              src="./images/Wingbucket.png"
+              alt="big bucket of wings"
+            />
+          </picture>
+          <span class="badge badge--secondary">Dinner</span>
+        </div>
+      </a>
+      <a href="dessert.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/Cheescake.webp" type="image/webp" />
+            <img
+              class="menu-links__img"
+              src="./images/Cheescake.png"
+              alt="delious strawberry cheesecake"
+            />
+          </picture>
+          <span class="badge badge--secondary">Dessert</span>
+        </div>
+      </a>
+      <a href="specials.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/specials.webp" type="image/webp" />
+            <img
+              class="menu-links__img"
+              src="./images/specials.png"
+              alt=" Gary Blue's Special of the Day"
+            />
+          </picture>
+          <span class="badge badge--secondary">Specials</span>
+        </div>
+      </a>
+      <a href="beverages.html">
+        <div class="menu-links">
+          <picture>
+            <source srcset="./images/beverage.webp" type="image/webp" />
+            <img
+              class="menu-links__img"
+              src="./images/beverage.png"
+              alt="Pictures of Beverages"
+            />
+          </picture>
+          <span class="badge badge--secondary">Beverages</span>
+        </div>
+      </a>
+    </section>
+    <section class="details grid grid--1x3">
+      <section class="testimonial card card--primary card--stroke">
+        <h2 class="testimonial__header header--white">Customer Reviews</h2>
+        <div class="testimonial__quotes grid grid--1x3">
+          <blockquote class="quote">
+            <p class="quote__text">
+              The big Gary Sandwich is the best chicken sandwich on the island
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Scott Hartnell</h3>
+                  <p class="quote__location">Stephenville,NL</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Gary's has the best bit of chicken i have ever put my lips to! Go
+              Habs Go
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Maurice Balbin</h3>
+                  <p class="quote__location">St.John's,NL</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p class="quote__text">Best egg this side of the overpass!</p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Gavin Coady</h3>
+                  <p class="quote__location">Bay Bulls,NL</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+      <section class="operation card card--primary card--stroke">
+        <h2 class="operation__header header--white">Award Winning Service</h2>
+        <img
+          class="img__award"
+          src="./images/GaryAward.png"
+          alt="Best Diner Service award 2021"
+        />
+      </section>
+    </section>
+    <footer class="block block--dark footer card--stroke">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">
+              Hours of Operation
+            </h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li>Monday-Saturday</li>
+              <li>7am-10pm</li>
+              <li>Sunday 6am-5pm</li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">contact Us</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li>Phone: 709-777-777</li>
+              <li>Email:info@garyblue.ca</li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Location</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li>42 Water Street</li>
+              <li>St.John's,NL</li>
+              <li>Canada</li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Follow Us</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img class="footer__logo" src="./images/GaryBlues.png" alt="" />
+          <p class="footer__copyright">Copyright 2022 Gary Blue's</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
